@@ -1,4 +1,4 @@
-# Imports, Random Number Generator, Delay in Terminal
+# Imports, Random Number Generator, Delay in Terminal, Commands
 import random
 import time
 
@@ -24,16 +24,19 @@ weapon = input("To choose, type: bow/blade/sword ").lower()
 
 if weapon == 'bow': 
 	print("An Old Bow, great choice!")
+	print(f"You deal {random.randint(5, 10)} damage and kill the spiders!")
 elif weapon == 'blade':
 	print("You picked the Lost Blade, nice one!")
+	print(f"You deal {random.randint(5, 10)} damage and kill the spiders!")
 elif weapon == 'sword':
 	print("Ah, the Ancient Sword. Fantastic!")
+	print(f"You deal {random.randint(5, 10)} damage and kill the spiders!")
 else:
 	print("Pick a weapon quickly! (bow/blade/sword)")
+	
+	
 
-print(f"You deal {random.randint(5, 10)} damage and kill the spiders!")
 time.sleep(1)
-
 print("Alright, let me explain. Our realm is being attacked by all kinds of monsters right now.")
 time.sleep(2)
 print("You are a Knight and we have no time to finish your training. We must fight!")
